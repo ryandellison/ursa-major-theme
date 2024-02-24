@@ -8,3 +8,9 @@ the following to your Emacs init file:
 ```
 (load-theme 'ursa-major)  ;; use the ursa-major theme
 ```
+
+## Supported Modes
+ - [x] Font Lock (code syntax highlighting)
+ - [ ] Org
+ - [ ] Dired
+ - [ ] Magit
