@@ -31,8 +31,7 @@
 
 ;; Define custom theme
 (deftheme ursa-major
-  "A light-mode Emacs theme consisting of primarily purple, blue
-  and green colors."
+  "A light theme consisting of purple, blue and green colors."
   :kind 'color-scheme
   :background-mode 'light)
 
