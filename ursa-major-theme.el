@@ -96,6 +96,7 @@
    `(font-lock-comment-face              ((,display (:foreground ,gray))))
    `(font-lock-type-face                 ((,display (:foreground ,green1)))) ;; (highlight type and class names)
    `(font-lock-function-call-face        ((,display (:foreground ,purple1))))
+   `(font-lock-function-name-face        ((,display (:foreground ,blue3))))
    `(font-lock-variable-name-face        ((,display (:foreground ,blue1))))
    `(font-lock-constant-face             ((,display (:foreground ,green2))))
    `(font-lock-string-face               ((,display (:foreground ,purple2))))
