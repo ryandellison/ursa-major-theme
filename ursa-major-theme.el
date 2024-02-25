@@ -42,7 +42,11 @@
       (fg             "#000000")
       (bg             "#ffffff")
       (gray           "#929292")
+      (highlight      "#eef49a")
+      (highlight2     "#adeded")
 
+
+      
       ;; Purple
       (purple1        "#8e1cad")      
       (purple2        "#5e0b75")
@@ -73,9 +77,15 @@
 
 
    ;;;; ======Standard Faces======
+
+   ;; STANDARD FACE DOCUMENTATION:
+   ;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Standard-Faces.html
+   
    `(cursor                              ((,display (:background ,purple1))))
    `(mode-line                           ((,display (:foreground ,bg :background ,purple1))))
-   
+   `(region                              ((,display (:background ,highlight))))
+   `(isearch                             ((,display (:background ,highlight))))
+   `(lazy-highlight                      ((,display (:background ,highlight2))))
    
    ;;;; ======Org Mode======
 
