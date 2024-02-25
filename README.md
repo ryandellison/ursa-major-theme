@@ -13,7 +13,7 @@ the following to your Emacs init file:
 ```
 
 ## Supported Modes
- - [ ] Standard Faces
+ - [x] Standard Faces
  - [x] Font Lock (code syntax highlighting)
  - [ ] Org
  - [ ] Dired

@@ -78,12 +78,14 @@
 
    ;;;; ======Standard Faces======
 
-   ;; STANDARD FACE DOCUMENTATION:
+   ;; STANDARD FACES DOCUMENTATION:
    ;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Standard-Faces.html
-   
+
+   `(default                             ((,display (:foreground ,fg :background ,bg))))
    `(cursor                              ((,display (:background ,purple1))))
    `(mode-line                           ((,display (:foreground ,bg :background ,purple1))))
    `(region                              ((,display (:background ,highlight))))
+   `(secondary-selection                 ((,display (:background ,highlight))))
    `(isearch                             ((,display (:background ,highlight))))
    `(lazy-highlight                      ((,display (:background ,highlight2))))
    
