@@ -39,28 +39,28 @@
 ;; Define custom colors and then change theme faces
 (let ((display `((class color)))
 
-      (fg             "#000000")
-      (bg             "#ffffff")
-      (gray           "#929292")
-      (highlight      "#eef49a")
-      (highlight2     "#adeded")
-
+      (black           "#000000")
+      (white           "#ffffff")
+      (gray            "#929292")
+      (yellow          "#eef49a")
+      (blue-highlight  "#adeded")
+      (red             "#ff0000")
 
       
       ;; Purple
-      (purple1        "#8e1cad")      
-      (purple2        "#5e0b75")
-      (purple3        "#461f6e")
+      (purple1         "#8e1cad")      
+      (purple2         "#5e0b75")
+      (purple3         "#aa30aa")
 
       ;; Blue
-      (blue1          "#6a63c9")
-      (blue2          "#13829e")
-      (blue3          "#1d628c")
+      (blue1           "#6a63c9")
+      (blue2           "#13829e")
+      (blue3           "#1d628c")
 
       ;; Green
-      (green1         "#139e74")
-      (green2         "#169145")
-      (green3         "#3c7350")
+      (green1          "#139e74")
+      (green2          "#169145")
+      (green3          "#3c7350")
 
       
       )
@@ -74,6 +74,8 @@
    ;;
    ;; where SPEC:          ((DISPLAY . ATTS)...)
    ;;
+   ;; M-x describe-face
+   ;;
 
 
    ;;;; ======Standard Faces======
@@ -81,13 +83,13 @@
    ;; STANDARD FACES DOCUMENTATION:
    ;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Standard-Faces.html
 
-   `(default                             ((,display (:foreground ,fg :background ,bg))))
+   `(default                             ((,display (:foreground ,black :background ,white))))
    `(cursor                              ((,display (:background ,purple1))))
-   `(mode-line                           ((,display (:foreground ,bg :background ,purple1))))
-   `(region                              ((,display (:background ,highlight))))
-   `(secondary-selection                 ((,display (:background ,highlight))))
-   `(isearch                             ((,display (:background ,highlight))))
-   `(lazy-highlight                      ((,display (:background ,highlight2))))
+   `(mode-line                           ((,display (:foreground ,white :background ,purple1))))
+   `(region                              ((,display (:background ,yellow))))
+   `(secondary-selection                 ((,display (:background ,yellow))))
+   `(isearch                             ((,display (:background ,yellow))))
+   `(lazy-highlight                      ((,display (:background ,blue-highlight))))
    
    ;;;; ======Org Mode======
 
@@ -101,17 +103,30 @@
    `(org-level-7                         ((,display (:foreground ,purple3))))
    `(org-level-8                         ((,display (:foreground ,blue3))))
 
+
+   ;;;; ======Dired======
+   `(dired-broken-symlink                ((,display (:foreground ,yellow :background ,blue2))))
+   `(dired-directory                     ((,display (:foreground ,purple1))))
+   `(dired-symlink                       ((,display (:foreground ,green2))))
+   `(dired-header                        ((,display (:foreground ,blue3))))
+   `(dired-mark                          ((,display (:foreground ,blue1))))
+   `(dired-marked                        ((,display (:foreground ,blue1 :weight bold))))
+   `(dired-flagged                       ((,display (:foreground ,red))))
+   `(dired-warning                       ((,display (:foreground ,red :weight bold))))
+   `(dired-set-id                        ((,display (:foreground ,red :weight bold))))
+   `(dired-special                       ((,display (:foreground ,blue3))))
    
    
    ;;;; ======Font Lock (syntax highlighting)======
    `(font-lock-keyword-face              ((,display (:foreground ,blue2))))
    `(font-lock-comment-face              ((,display (:foreground ,gray))))
-   `(font-lock-type-face                 ((,display (:foreground ,green1)))) ;; (highlight type and class names)
+   `(font-lock-type-face                 ((,display (:foreground ,green1))))
    `(font-lock-function-call-face        ((,display (:foreground ,purple1))))
    `(font-lock-function-name-face        ((,display (:foreground ,blue3))))
    `(font-lock-variable-name-face        ((,display (:foreground ,blue1))))
    `(font-lock-constant-face             ((,display (:foreground ,green2))))
    `(font-lock-string-face               ((,display (:foreground ,purple2))))
+   `(font-lock-builtin-face              ((,display (:foreground ,blue1))))
 
 
    ;;;; ======Misc======

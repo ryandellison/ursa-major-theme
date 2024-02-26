@@ -16,5 +16,5 @@ the following to your Emacs init file:
  - [x] Standard Faces
  - [x] Font Lock (code syntax highlighting)
  - [ ] Org
- - [ ] Dired
+ - [x] Dired
  - [ ] Magit
